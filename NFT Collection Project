@@ -1,0 +1,34 @@
+const nfts=[];
+
+function minNfts(name,age,gender)
+{
+    const metaData=
+    {
+        "name":name,
+        "age":age,
+        "gender":gender,
+    }
+    nfts.push(metaData);
+}
+
+function listNfts()
+{
+  for(let i=0;i<nfts.length;i++)
+    {
+      const metaData=nfts[i];
+      console.log("Name is:",metaData.name);
+      console.log("Age is:",metaData.age);
+      console.log("Gender is:",metaData.gender);
+    }
+  
+}
+minNfts("Harman",10,"male");
+minNfts("Manna",12,"male");
+minNfts("Arsh",11,"male");
+
+function totalSuppply()
+{
+  console.log("Toatl number of nfts created:",nfts.length);
+}
+listNfts();
+totalSuppply();
